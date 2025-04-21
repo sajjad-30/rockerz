@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>boAt Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 100vw;
+      min-height: auto;
+      padding: 50px 20px;
+    }
+
+    .main-content {
+      background: #272C34;
+      width: 1500px;
+      height: 900px;
+      padding: 30px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links .active {
+      color: #EB1B24;
+      font-weight: 500;
+    }
+
+    .icons img {
+      padding: 15px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+
+    .hero-text {
+      margin-top: 60px;
+    }
+
+    .hero-text h1 {
+      font-size: 90px;
+      font-weight: 700;
+      color: #F7E6D3;
+    }
+
+    .subtitle {
+      font-size: 40px;
+      font-weight: 300;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .price {
+      font-size: 60px;
+      color: #EB1B24;
+      margin-top: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .add-to-cart {
+      background-color: #EB1B24;
+      color: white;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+
+    .more-details {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      border-radius: 24px;
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+
+    .hero-media {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-image img {
+      height: 550px;
+    }
+
+    .dots {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    .dot.active {
+      background-color: white;
+    }
+
+    .background-boat {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 400px;
+      font-weight: 900;
+      color: rgba(247, 230, 211, 0.03);
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-text,
+    .hero-media {
+      z-index: 1;
+    }
+
+    .color-rectangles {
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 270px;
+      margin-left: 105%;
+      transform: translateY(-50%);
+      gap: 40px;
+    }
+
+    .color-rectangles div {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+
+    }
+
+    .color1 {
+      background: #272C34;
+    }
+
+    .color2 {
+      background: #EB1B24;
+    }
+
+    .color3 {
+      background: #F7E6D3;
+    }
+
+    .color4 {
+      background: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-content">
+      <header class="navbar">
+        <div class="logo">
+          <img src="img/image 4 1.png" alt="boAt Logo">
+        </div>
+        <nav class="nav-links">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="icons">
+          <img src="img/Frame.png" alt="Icon 1" />
+          <img src="img/Frame (2).png" alt="Icon 2" />
+        </div>
+      </header>
+
+      <div class="background-boat">boAt</div>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1>boAt Rockerz 460</h1>
+          <p class="subtitle">BLUETOOTH HEADPHONES</p>
+          <p class="price">$199</p>
+          <div class="buttons">
+            <button class="add-to-cart">Add to cart</button>
+            <button class="more-details">More Details</button>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-image">
+            <img src="img/image 3 1.png" alt="Headphones" />
+          </div>
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="color-rectangles">
+        <div class="color1"> </div>
+        <div class="color2"></div>
+        <div class="color3"></div>
+        <div class="color4"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
